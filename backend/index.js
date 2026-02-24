@@ -41,6 +41,8 @@ app.get('/api/cekcon', async (req, res) => {
     res.json("Cek koneksi"); 
 });
 
+
+
 app.listen(PORT, () => {
     console.log(`Server Belajar berjalan di http://localhost:${PORT}`);
 });

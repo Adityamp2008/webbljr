@@ -37,6 +37,9 @@ app.get('/api/materi/:slug', async (req, res) => {
     res.json(data);
 });
 
+app.get('/api/pesan'), (req, res) => {
+  res.json("Cek cek");
+};
 
 app.listen(PORT, () => {
     console.log(`Server Belajar berjalan di http://localhost:${PORT}`);

@@ -5,4 +5,10 @@
     </h1>
 <a href="../view/dua.vue">masuk ke dua</a>
   </div>
+  
+  <div>
+    <h1>Home Page</h1>
+    <router-link to="/login">Ke Login</router-link>
+  </div>
+
 </template>

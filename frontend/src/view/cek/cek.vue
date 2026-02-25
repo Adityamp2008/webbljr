@@ -7,7 +7,7 @@ const massage = ref("");
 onMounted(async () => {
     try{
         const response = await axios.get("http://localhost:5000/api/cekcon");
-        massage.value = response.data.massage;
+        massage.value = response.data;
     } catch (error) {
     console.error(error);
   }

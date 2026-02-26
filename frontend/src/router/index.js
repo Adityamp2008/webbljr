@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HomeView from '../view/HomeView.vue'
-import KeduaView from '../view/dua.vue'
+import HomeView from '../view/home.vue'
+import LoginView from '../view/auth/login.vue'
+import RegisterView from '../view/auth/register.vue'
+import belajar from '../view/materi/belajar.vue'
+import cek from '../view/cek/cek.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,8 +17,20 @@ const router = createRouter({
           component : HomeView,
         },
         {
-        path: 'kedua',
-        component: KeduaView,
+        path: 'login/adminpanel',
+        component: LoginView,
+        },
+        {
+          path : 'regis',
+          component : RegisterView,
+        },
+        {
+        path: 'belajar/:materi',
+        component: belajar,
+        },
+                {
+        path: 'cek',
+        component: cek,
         },
       ]
     }
